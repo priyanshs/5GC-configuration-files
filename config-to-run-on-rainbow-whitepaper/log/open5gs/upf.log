@@ -1,0 +1,133 @@
+Open5GS daemon v2.7.1
+
+05/17 18:27:51.561: [app] INFO: Configuration: 'upf.yaml' (../lib/app/ogs-init.c:133)
+05/17 18:27:51.561: [app] INFO: File Logging: 'log/open5gs/upf.log' (../lib/app/ogs-init.c:136)
+05/17 18:27:51.587: [pfcp] WARNING: Please change the configuration files of smf.yaml and upf.yaml as below. (../lib/pfcp/context.c:2199)
+
+<OLD Format>
+smf:
+  session:
+    - subnet: 10.45.0.1/16
+
+<NEW Format>
+smf:
+  session:
+    - subnet: 10.45.0.0/16
+      gateway: 10.45.0.1
+
+
+05/17 18:27:51.587: [pfcp] WARNING: Please change the configuration files of smf.yaml and upf.yaml as below. (../lib/pfcp/context.c:2199)
+
+<OLD Format>
+smf:
+  session:
+    - subnet: 2001:db8:cafe::1/48
+
+<NEW Format>
+smf:
+  session:
+    - subnet: 2001:db8:cafe::/48
+      gateway: 2001:db8:cafe::1
+
+
+05/17 18:27:51.588: [metrics] INFO: metrics_server() [http://127.0.0.7]:9390 (../lib/metrics/prometheus/context.c:299)
+05/17 18:27:51.588: [pfcp] INFO: pfcp_server() [127.0.0.7]:8805 (../lib/pfcp/path.c:30)
+05/17 18:27:51.588: [gtp] INFO: gtp_server() [10.237.27.115]:2152 (../lib/gtp/path.c:30)
+05/17 18:27:51.588: [app] INFO: UPF initialize...done (../src/upf/app.c:31)
+05/17 18:27:53.779: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.4]:8805 (../lib/pfcp/path.c:61)
+05/17 18:27:53.779: [upf] INFO: PFCP associated [127.0.0.4]:8805 (../src/upf/pfcp-sm.c:184)
+05/17 18:28:21.480: [upf] INFO: [Added] Number of UPF-Sessions is now 1 (../src/upf/context.c:208)
+05/17 18:28:21.480: [gtp] INFO: gtp_connect() [127.0.0.4]:2152 (../lib/gtp/path.c:60)
+05/17 18:28:21.481: [upf] INFO: UE F-SEID[UP:0xfdf CP:0xc7d] APN[internet] PDN-Type[1] IPv4[10.45.0.2] IPv6[] (../src/upf/context.c:485)
+05/17 18:28:21.481: [upf] INFO: UE F-SEID[UP:0xfdf CP:0xc7d] APN[internet] PDN-Type[1] IPv4[10.45.0.2] IPv6[] (../src/upf/context.c:485)
+05/17 18:28:21.487: [gtp] INFO: gtp_connect() [10.237.27.10]:2152 (../lib/gtp/path.c:60)
+05/17 18:29:30.981: [app] INFO: SIGTERM received (../src/main.c:53)
+05/17 18:29:30.981: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+05/17 18:29:30.982: [upf] INFO: PFCP de-associated [127.0.0.4]:8805 (../src/upf/pfcp-sm.c:199)
+05/17 18:29:30.982: [upf] INFO: [Removed] Number of UPF-sessions is now 0 (../src/upf/context.c:252)
+05/17 18:29:30.984: [app] INFO: UPF terminate...done (../src/upf/app.c:39)
+Open5GS daemon v2.7.1
+
+05/17 18:30:08.106: [app] INFO: Configuration: 'upf.yaml' (../lib/app/ogs-init.c:133)
+05/17 18:30:08.106: [app] INFO: File Logging: 'log/open5gs/upf.log' (../lib/app/ogs-init.c:136)
+05/17 18:30:08.165: [pfcp] WARNING: Please change the configuration files of smf.yaml and upf.yaml as below. (../lib/pfcp/context.c:2199)
+
+<OLD Format>
+smf:
+  session:
+    - subnet: 100.45.0.1/16
+
+<NEW Format>
+smf:
+  session:
+    - subnet: 100.45.0.0/16
+      gateway: 100.45.0.1
+
+
+05/17 18:30:08.165: [pfcp] WARNING: Please change the configuration files of smf.yaml and upf.yaml as below. (../lib/pfcp/context.c:2199)
+
+<OLD Format>
+smf:
+  session:
+    - subnet: 2001:db8:cafe::1/48
+
+<NEW Format>
+smf:
+  session:
+    - subnet: 2001:db8:cafe::/48
+      gateway: 2001:db8:cafe::1
+
+
+05/17 18:30:08.166: [metrics] INFO: metrics_server() [http://127.0.0.7]:9390 (../lib/metrics/prometheus/context.c:299)
+05/17 18:30:08.166: [pfcp] INFO: pfcp_server() [127.0.0.7]:8805 (../lib/pfcp/path.c:30)
+05/17 18:30:08.166: [gtp] INFO: gtp_server() [10.237.27.115]:2152 (../lib/gtp/path.c:30)
+05/17 18:30:08.166: [app] INFO: UPF initialize...done (../src/upf/app.c:31)
+05/17 18:30:08.201: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.4]:8805 (../lib/pfcp/path.c:61)
+05/17 18:30:08.201: [upf] INFO: PFCP associated [127.0.0.4]:8805 (../src/upf/pfcp-sm.c:184)
+05/17 18:30:29.753: [app] INFO: SIGTERM received (../src/main.c:53)
+05/17 18:30:29.753: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+05/17 18:30:29.754: [upf] INFO: PFCP de-associated [127.0.0.4]:8805 (../src/upf/pfcp-sm.c:199)
+05/17 18:30:29.759: [app] INFO: UPF terminate...done (../src/upf/app.c:39)
+Open5GS daemon v2.7.1
+
+05/17 18:30:31.605: [app] INFO: Configuration: 'upf.yaml' (../lib/app/ogs-init.c:133)
+05/17 18:30:31.605: [app] INFO: File Logging: 'log/open5gs/upf.log' (../lib/app/ogs-init.c:136)
+05/17 18:30:31.642: [pfcp] WARNING: Please change the configuration files of smf.yaml and upf.yaml as below. (../lib/pfcp/context.c:2199)
+
+<OLD Format>
+smf:
+  session:
+    - subnet: 100.45.0.1/16
+
+<NEW Format>
+smf:
+  session:
+    - subnet: 100.45.0.0/16
+      gateway: 100.45.0.1
+
+
+05/17 18:30:31.642: [pfcp] WARNING: Please change the configuration files of smf.yaml and upf.yaml as below. (../lib/pfcp/context.c:2199)
+
+<OLD Format>
+smf:
+  session:
+    - subnet: 2001:db8:cafe::1/48
+
+<NEW Format>
+smf:
+  session:
+    - subnet: 2001:db8:cafe::/48
+      gateway: 2001:db8:cafe::1
+
+
+05/17 18:30:31.642: [metrics] INFO: metrics_server() [http://127.0.0.7]:9390 (../lib/metrics/prometheus/context.c:299)
+05/17 18:30:31.642: [pfcp] INFO: pfcp_server() [127.0.0.7]:8805 (../lib/pfcp/path.c:30)
+05/17 18:30:31.643: [gtp] INFO: gtp_server() [10.237.27.115]:2152 (../lib/gtp/path.c:30)
+05/17 18:30:31.643: [app] INFO: UPF initialize...done (../src/upf/app.c:31)
+05/17 18:30:31.695: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.4]:8805 (../lib/pfcp/path.c:61)
+05/17 18:30:31.695: [upf] INFO: PFCP associated [127.0.0.4]:8805 (../src/upf/pfcp-sm.c:184)
+05/17 18:31:10.745: [upf] INFO: [Added] Number of UPF-Sessions is now 1 (../src/upf/context.c:208)
+05/17 18:31:10.745: [gtp] INFO: gtp_connect() [127.0.0.4]:2152 (../lib/gtp/path.c:60)
+05/17 18:31:10.745: [upf] INFO: UE F-SEID[UP:0x58 CP:0x6a2] APN[internet] PDN-Type[1] IPv4[100.45.0.2] IPv6[] (../src/upf/context.c:485)
+05/17 18:31:10.745: [upf] INFO: UE F-SEID[UP:0x58 CP:0x6a2] APN[internet] PDN-Type[1] IPv4[100.45.0.2] IPv6[] (../src/upf/context.c:485)
+05/17 18:31:10.750: [gtp] INFO: gtp_connect() [10.237.27.10]:2152 (../lib/gtp/path.c:60)
